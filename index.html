@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grup WhatsApp Mahasiswa Universitas Terbuka</title>
+  <meta name="description" content="Temukan dan bergabung dengan grup WhatsApp mahasiswa Universitas Terbuka berdasarkan program studi, angkatan, UT Daerah, mata kuliah, Tuton, Karil, dan kebutuhan perkuliahan lainnya." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://grups.mhsut.com" />
+  <meta property="og:title" content="Grup WhatsApp Mahasiswa Universitas Terbuka" />
+  <meta property="og:description" content="Cari grup WhatsApp mahasiswa Universitas Terbuka berdasarkan program studi, angkatan, UT Daerah, mata kuliah, Tuton, dan Karil." />
+  <meta property="og:url" content="https://grups.mhsut.com" />
+  <meta property="og:site_name" content="Grup Mahasiswa UT" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Grup WhatsApp Mahasiswa Universitas Terbuka" />
+  <meta name="twitter:description" content="Temukan grup mahasiswa Universitas Terbuka berdasarkan program studi, angkatan, UT Daerah, mata kuliah, Tuton, dan Karil." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0c2340;
+      --navy-mid: #142e52;
+      --blue-accent: #315f85;
+      --blue-light: #eef4f8;
+      --gold: #b47b1e;
+      --amber-light: #e8b549;
+      --wa-green: #25D366;
+      --bg-page: #f7f8fa;
+      --bg-section: #f0f3f6;
+      --slate-900: #0f172a;
+      --slate-800: #1e293b;
+      --slate-600: #475569;
+      --slate-500: #64748b;
+      --slate-400: #94a3b8;
+      --slate-300: #cbd5e1;
+      --slate-200: #e2e8f0;
+      --emerald-400: #34d399;
+      --emerald-300: #6ee7b7;
+      --amber-300: #fcd34d;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      background: #f3f4f6;
+      color: var(--slate-900);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* =================== HERO SECTION =================== */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid var(--slate-200);
+      background: var(--navy);
+    }
+
+    .hero-gradient-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top right, rgba(80,143,196,0.22), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(232,181,73,0.12), transparent 32%);
+      pointer-events: none;
+    }
+
+    .hero-line {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 1px;
+      width: 90%;
+      transform: translateX(-50%);
+      background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+    }
+
+    @media (min-width: 640px) {
+      .hero-inner { padding-left: 32px; padding-right: 32px; }
+    }
+    @media (min-width: 1024px) {
+      .hero-inner { padding-left: 40px; padding-right: 40px; padding-bottom: 96px; }
+    }
+
+    /* NAV */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .nav-brand:hover { opacity: 0.9; }
+
+    .nav-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(8px);
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+    .nav-brand:hover .nav-icon { background: rgba(255,255,255,0.15); }
+
+    .nav-brand-text-main {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: white;
+    }
+    .nav-brand-text-sub {
+      display: block;
+      font-size: 12px;
+      color: var(--slate-300);
+    }
+
+    .nav-cta {
+      display: none;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.1);
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .nav-cta:hover { border-color: rgba(255,255,255,0.25); background: rgba(255,255,255,0.15); }
+    @media (min-width: 640px) { .nav-cta { display: inline-flex; } }
+
+    /* HERO GRID */
+    .hero-grid {
+      display: grid;
+      align-items: center;
+      gap: 56px;
+      padding-top: 64px;
+      padding-bottom: 16px;
+    }
+    @media (min-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+        padding-top: 80px;
+      }
+    }
+
+    /* HERO LEFT */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 9999px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.07);
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #e2e8f0;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-title {
+      margin-top: 24px;
+      max-width: 896px;
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      color: white;
+    }
+    @media (min-width: 640px) { .hero-title { font-size: 48px; } }
+    @media (min-width: 1024px) { .hero-title { font-size: 60px; } }
+
+    .hero-desc {
+      margin-top: 24px;
+      max-width: 672px;
+      font-size: 16px;
+      line-height: 2;
+      color: var(--slate-300);
+    }
+    @media (min-width: 640px) { .hero-desc { font-size: 18px; } }
+
+    .hero-actions {
+      margin-top: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    @media (min-width: 640px) { .hero-actions { flex-direction: row; } }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: 12px;
+      background: white;
+      padding: 14px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+      transition: transform 0.2s, background 0.2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); background: #f1f5f9; }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.07);
+      padding: 14px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      transition: background 0.2s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.12); }
+
+    .hero-disclaimer {
+      margin-top: 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--slate-400);
+    }
+
+    /* HERO RIGHT CARD */
+    .hero-card-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 512px;
+      margin: 0 auto;
+    }
+
+    .hero-card-glow {
+      position: absolute;
+      inset: -32px;
+      border-radius: 9999px;
+      background: rgba(96,165,250,0.1);
+      filter: blur(64px);
+      pointer-events: none;
+    }
+
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 32px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.08);
+      padding: 20px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.2);
+      backdrop-filter: blur(24px);
+    }
+
+    .hero-card-inner {
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.07);
+      padding: 20px;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--slate-400);
+    }
+
+    .card-title {
+      margin-top: 4px;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .card-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      background: rgba(52,211,153,0.15);
+      color: var(--emerald-300);
+      flex-shrink: 0;
+    }
+
+    .card-items {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.06);
+      padding: 14px;
+    }
+
+    .card-item-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.1);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--amber-300);
+      flex-shrink: 0;
+    }
+
+    .card-item-content { flex: 1; min-width: 0; }
+    .card-item-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-item-sub {
+      margin-top: 2px;
+      font-size: 12px;
+      color: var(--slate-400);
+    }
+
+    .card-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 9999px;
+      background: var(--emerald-400);
+      flex-shrink: 0;
+    }
+
+    /* =================== FEATURES SECTION =================== */
+    .features-section {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    @media (min-width: 640px) { .features-section { padding-left: 32px; padding-right: 32px; } }
+    @media (min-width: 1024px) { .features-section { padding-left: 40px; padding-right: 40px; } }
+
+    .section-label {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--blue-accent);
+    }
+
+    .section-title {
+      margin-top: 12px;
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: -0.025em;
+      color: var(--slate-900);
+    }
+    @media (min-width: 640px) { .section-title { font-size: 36px; } }
+
+    .section-desc {
+      margin-top: 20px;
+      line-height: 1.75;
+      color: var(--slate-600);
+    }
+
+    .text-center { text-align: center; }
+    .max-w-3xl { max-width: 768px; margin-left: auto; margin-right: auto; }
+
+    .feature-grid {
+      margin-top: 48px;
+      display: grid;
+      gap: 20px;
+    }
+    @media (min-width: 640px) { .feature-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .feature-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    .feature-card {
+      border-radius: 16px;
+      border: 1px solid var(--slate-200);
+      background: white;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+      cursor: default;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--slate-300);
+      box-shadow: 0 20px 25px -5px rgba(148,163,184,0.3);
+    }
+    .feature-card:hover .feature-icon {
+      background: var(--blue-accent);
+      color: white;
+    }
+
+    .feature-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: var(--blue-light);
+      color: var(--blue-accent);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .feature-title {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .feature-desc {
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--slate-600);
+    }
+
+    /* =================== DIRECTORY SECTION =================== */
+    .directory-section {
+      border-top: 1px solid var(--slate-200);
+      border-bottom: 1px solid var(--slate-200);
+      background: white;
+      padding: 80px 0;
+    }
+
+    .directory-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    @media (min-width: 640px) { .directory-inner { padding-left: 32px; padding-right: 32px; } }
+    @media (min-width: 1024px) { .directory-inner { padding-left: 40px; padding-right: 40px; } }
+
+    .directory-box {
+      overflow: hidden;
+      border-radius: 32px;
+      border: 1px solid var(--slate-200);
+      background: white;
+      box-shadow: 0 20px 25px -5px rgba(148,163,184,0.2);
+    }
+
+    /* FILTER BAR */
+    .filter-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 20px 20px 0;
+      border-bottom: 1px solid var(--slate-100);
+    }
+    @media (min-width: 640px) {
+      .filter-bar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 24px 0;
+      }
+    }
+
+    .tabs {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      overflow-x: auto;
+      padding-bottom: 0;
+      scrollbar-width: none;
+    }
+    .tabs::-webkit-scrollbar { display: none; }
+
+    .tab-btn {
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      border: none;
+      background: transparent;
+      color: var(--slate-500);
+      white-space: nowrap;
+    }
+    .tab-btn:hover { background: var(--blue-light); color: var(--blue-accent); }
+    .tab-btn.active { background: var(--blue-accent); color: white; }
+
+    .search-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+    .search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--slate-400);
+      pointer-events: none;
+    }
+    .search-input {
+      width: 100%;
+      padding: 10px 12px 10px 36px;
+      border-radius: 10px;
+      border: 1px solid var(--slate-200);
+      background: var(--bg-page);
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--slate-900);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      min-width: 240px;
+    }
+    .search-input::placeholder { color: var(--slate-400); }
+    .search-input:focus { border-color: var(--blue-accent); box-shadow: 0 0 0 3px rgba(49,95,133,0.1); }
+
+    /* GROUP LIST */
+    .group-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .group-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--slate-100);
+      transition: background 0.15s;
+    }
+    @media (min-width: 640px) { .group-item { padding: 16px 24px; } }
+    .group-item:hover { background: var(--bg-page); }
+    .group-item:last-child { border-bottom: none; }
+
+    .group-avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      flex-shrink: 0;
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      padding: 5px;
+      overflow: hidden;
+    }
+    .group-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .group-info { flex: 1; min-width: 0; }
+    .group-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--slate-900);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .group-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 4px;
+      flex-wrap: wrap;
+    }
+    .group-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .tag-prodi { background: #dbeafe; color: #1d4ed8; }
+    .tag-daerah { background: #dcfce7; color: #15803d; }
+    .tag-angkatan { background: #fef3c7; color: #92400e; }
+    .tag-tuton { background: #ede9fe; color: #6d28d9; }
+    .tag-matkul { background: #ffedd5; color: #c2410c; }
+    .tag-karil { background: #fce7f3; color: #be185d; }
+
+    .group-date {
+      font-size: 12px;
+      color: var(--slate-400);
+    }
+
+    .join-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      background: #25D366;
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .join-btn:hover { background: #1da851; transform: scale(1.03); }
+
+    /* PAGINATION */
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-top: 1px solid var(--slate-100);
+      background: var(--bg-page);
+    }
+    @media (min-width: 640px) { .pagination { padding: 16px 24px; } }
+
+    .page-info { font-size: 13px; color: var(--slate-500); }
+
+    .page-btns {
+      display: flex;
+      gap: 4px;
+    }
+    .page-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--slate-200);
+      background: white;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--slate-600);
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .page-btn:hover { background: var(--blue-light); border-color: var(--blue-accent); color: var(--blue-accent); }
+    .page-btn.active { background: var(--blue-accent); border-color: var(--blue-accent); color: white; }
+    .page-btn:disabled { opacity: 0.4; cursor: default; }
+    .page-btn:disabled:hover { background: white; border-color: var(--slate-200); color: var(--slate-600); }
+
+    /* EMPTY STATE */
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 24px;
+      text-align: center;
+    }
+    .empty-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      background: #f0fdf4;
+      color: #25D366;
+    }
+    .empty-title {
+      margin-top: 20px;
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+    .empty-sub {
+      margin-top: 8px;
+      font-size: 14px;
+      color: var(--slate-500);
+    }
+
+    /* =================== HOW TO USE =================== */
+    .howto-section {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    @media (min-width: 640px) { .howto-section { padding-left: 32px; padding-right: 32px; } }
+    @media (min-width: 1024px) { .howto-section { padding-left: 40px; padding-right: 40px; } }
+
+    .howto-box {
+      overflow: hidden;
+      border-radius: 32px;
+      border: 1px solid var(--slate-200);
+      background: var(--bg-section);
+    }
+
+    .howto-grid {
+      display: grid;
+      gap: 40px;
+      padding: 28px;
+    }
+    @media (min-width: 640px) { .howto-grid { padding: 40px; } }
+    @media (min-width: 1024px) {
+      .howto-grid {
+        grid-template-columns: 0.8fr 1.2fr;
+        padding: 56px;
+      }
+    }
+
+    .howto-steps {
+      display: grid;
+      gap: 16px;
+    }
+
+    .howto-step {
+      display: flex;
+      gap: 20px;
+      border-radius: 16px;
+      border: 1px solid var(--slate-200);
+      background: white;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+
+    .step-num {
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .step-title {
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .step-desc {
+      margin-top: 4px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--slate-600);
+    }
+
+    /* =================== FOOTER =================== */
+    footer {
+      border-top: 1px solid var(--slate-200);
+      background: var(--navy);
+      color: var(--slate-300);
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 56px 20px;
+    }
+    @media (min-width: 640px) { .footer-inner { padding-left: 32px; padding-right: 32px; } }
+    @media (min-width: 1024px) { .footer-inner { padding-left: 40px; padding-right: 40px; } }
+
+    .footer-grid {
+      display: grid;
+      gap: 40px;
+    }
+    @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1024px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr; } }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .footer-brand-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.1);
+      flex-shrink: 0;
+    }
+    .footer-brand-name { font-weight: 700; color: white; }
+    .footer-brand-sub { font-size: 12px; color: var(--slate-400); }
+
+    .footer-about {
+      margin-top: 20px;
+      max-width: 576px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--slate-400);
+    }
+
+    .footer-actions {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 12px;
+      background: white;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .footer-btn-primary:hover { background: #f1f5f9; }
+
+    .footer-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.05);
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .footer-btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+    .footer-col-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: white;
+    }
+
+    .footer-nav {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .footer-nav a {
+      font-size: 14px;
+      color: var(--slate-300);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: white; }
+
+    .footer-info {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .footer-info p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--slate-400);
+    }
+
+    .footer-bottom {
+      margin-top: 48px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+    }
+    @media (min-width: 768px) {
+      .footer-bottom {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    /* =================== UTILS =================== */
+    .hidden { display: none; }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin { animation: spin 1s linear infinite; }
+
+    /* Result count badge */
+    .result-count {
+      padding: 16px 20px 12px;
+      font-size: 13px;
+      color: var(--slate-500);
+      border-bottom: 1px solid var(--slate-100);
+    }
+    @media (min-width: 640px) { .result-count { padding-left: 24px; padding-right: 24px; } }
+    .result-count strong { color: var(--slate-900); }
+  </style>
+</head>
+<body>
+<main style="min-height:100vh; background:#f7f8fa; color:#0f172a;">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-gradient-overlay"></div>
+    <div class="hero-line" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <!-- Nav -->
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="nav-brand" href="#">
+          <span class="nav-icon">
+            <!-- Graduation Cap -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+              <path d="M22 10v6"/>
+              <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+            </svg>
+          </span>
+          <span>
+            <span class="nav-brand-text-main">Grup Mahasiswa UT</span>
+            <span class="nav-brand-text-sub">Direktori komunitas mahasiswa</span>
+          </span>
+        </a>
+        <a href="#daftar-grup" class="nav-cta">Cari grup</a>
+      </nav>
+
+      <!-- Hero Grid -->
+      <div class="hero-grid">
+        <!-- Left -->
+        <div>
+          <div class="hero-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#fcd34d; flex-shrink:0;" aria-hidden="true">
+              <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/>
+              <path d="M20 2v4"/><path d="M22 4h-4"/>
+              <circle cx="4" cy="20" r="2"/>
+            </svg>
+            Satu tempat untuk menemukan komunitas UT
+          </div>
+
+          <h1 class="hero-title">Temukan Grup WhatsApp Mahasiswa Universitas Terbuka</h1>
+
+          <p class="hero-desc">
+            Cari grup berdasarkan program studi, angkatan, UT Daerah, mata kuliah, Tuton, Karil, dan berbagai kebutuhan perkuliahan lainnya.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#daftar-grup" class="btn-primary">
+              Lihat daftar grup
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>
+              </svg>
+            </a>
+            <a href="#cara-menggunakan" class="btn-secondary">Cara menggunakan</a>
+          </div>
+
+          <div class="hero-disclaimer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#6ee7b7; flex-shrink:0; margin-top:2px;" aria-hidden="true">
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+            <p>Platform komunitas mahasiswa dan bukan situs resmi Universitas Terbuka.</p>
+          </div>
+        </div>
+
+        <!-- Right Card -->
+        <div class="hero-card-wrap">
+          <div class="hero-card-glow" aria-hidden="true"></div>
+          <div class="hero-card">
+            <div class="hero-card-inner">
+              <div class="card-header">
+                <div>
+                  <p class="card-label">Direktori grup</p>
+                  <p class="card-title">Komunitas Mahasiswa UT</p>
+                </div>
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="card-items">
+                <div class="card-item">
+                  <span class="card-item-num">1</span>
+                  <div class="card-item-content">
+                    <p class="card-item-title">Grup Program Studi</p>
+                    <p class="card-item-sub">Tersedia dan dapat dicari</p>
+                  </div>
+                  <span class="card-dot"></span>
+                </div>
+                <div class="card-item">
+                  <span class="card-item-num">2</span>
+                  <div class="card-item-content">
+                    <p class="card-item-title">Grup UT Daerah</p>
+                    <p class="card-item-sub">Tersedia dan dapat dicari</p>
+                  </div>
+                  <span class="card-dot"></span>
+                </div>
+                <div class="card-item">
+                  <span class="card-item-num">3</span>
+                  <div class="card-item-content">
+                    <p class="card-item-title">Grup Tuton dan Mata Kuliah</p>
+                    <p class="card-item-sub">Tersedia dan dapat dicari</p>
+                  </div>
+                  <span class="card-dot"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="features-section">
+    <div class="max-w-3xl text-center">
+      <p class="section-label">Pencarian yang lebih terarah</p>
+      <h2 class="section-title">Cari grup sesuai kebutuhan perkuliahan</h2>
+      <p class="section-desc">
+        Gunakan kategori dan pencarian agar kamu tidak perlu lagi membongkar berbagai unggahan hanya demi menemukan satu tautan grup.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <!-- Program Studi -->
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+            <path d="M22 10v6"/>
+            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">Program Studi</h3>
+        <p class="feature-desc">Temukan grup mahasiswa berdasarkan jurusan atau program studi yang sedang ditempuh.</p>
+      </article>
+
+      <!-- Angkatan -->
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+            <circle cx="9" cy="7" r="4"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">Angkatan</h3>
+        <p class="feature-desc">Terhubung dengan mahasiswa baru, teman satu angkatan, dan lintas semester.</p>
+      </article>
+
+      <!-- UT Daerah -->
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">UT Daerah</h3>
+        <p class="feature-desc">Cari komunitas mahasiswa berdasarkan lokasi UT Daerah atau UPBJJ.</p>
+      </article>
+
+      <!-- Tuton dan Karil -->
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 7v14"/>
+            <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>
+          </svg>
+        </div>
+        <h3 class="feature-title">Tuton dan Karil</h3>
+        <p class="feature-desc">Temukan komunitas belajar mata kuliah, Tuton, Karil, dan kegiatan akademik.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== DIRECTORY ===================== -->
+  <section id="daftar-grup" class="directory-section">
+    <div class="directory-inner">
+      <div class="max-w-3xl text-center" style="margin-bottom:40px;">
+        <p class="section-label">Direktori grup</p>
+        <h2 class="section-title">Daftar Grup WhatsApp Mahasiswa UT</h2>
+        <p class="section-desc">
+          Cari berdasarkan nama, program studi, angkatan, UT Daerah, mata kuliah, Tuton, Karil, atau kategori lain yang tersedia.
+        </p>
+      </div>
+
+      <div class="directory-box">
+        <!-- Filter bar -->
+        <div class="filter-bar" style="padding-bottom: 16px;">
+          <div class="tabs" id="tabs" role="tablist">
+            <button class="tab-btn active" data-tab="semua" role="tab" aria-selected="true">Semua</button>
+            <button class="tab-btn" data-tab="prodi" role="tab" aria-selected="false">Program Studi</button>
+            <button class="tab-btn" data-tab="angkatan" role="tab" aria-selected="false">Angkatan</button>
+            <button class="tab-btn" data-tab="daerah" role="tab" aria-selected="false">UT Daerah</button>
+            <button class="tab-btn" data-tab="tuton" role="tab" aria-selected="false">Tuton</button>
+            <button class="tab-btn" data-tab="matkul" role="tab" aria-selected="false">Mata Kuliah</button>
+            <button class="tab-btn" data-tab="karil" role="tab" aria-selected="false">Karil</button>
+          </div>
+          <div class="search-wrap">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input
+              type="search"
+              id="search-input"
+              class="search-input"
+              placeholder="Cari grup..."
+              aria-label="Cari grup WhatsApp"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <!-- Result count -->
+        <div class="result-count" id="result-count"></div>
+
+        <!-- Group list -->
+        <div class="group-list" id="group-list" role="list" aria-label="Daftar grup WhatsApp"></div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW TO USE ===================== -->
+  <section id="cara-menggunakan" class="howto-section">
+    <div class="howto-box">
+      <div class="howto-grid">
+        <div>
+          <p class="section-label">Cara menggunakan</p>
+          <h2 class="section-title">Temukan komunitas dalam beberapa langkah</h2>
+          <p class="section-desc">
+            Direktori dirancang agar tetap sederhana, cepat, dan nyaman digunakan dari ponsel maupun komputer.
+          </p>
+        </div>
+
+        <ol class="howto-steps">
+          <li class="howto-step">
+            <span class="step-num">01</span>
+            <div>
+              <h3 class="step-title">Pilih kategori</h3>
+              <p class="step-desc">Gunakan tab kategori untuk menyaring grup berdasarkan kebutuhanmu.</p>
+            </div>
+          </li>
+          <li class="howto-step">
+            <span class="step-num">02</span>
+            <div>
+              <h3 class="step-title">Cari nama grup</h3>
+              <p class="step-desc">Ketik program studi, daerah, angkatan, atau kata kunci lainnya.</p>
+            </div>
+          </li>
+          <li class="howto-step">
+            <span class="step-num">03</span>
+            <div>
+              <h3 class="step-title">Bergabung melalui WhatsApp</h3>
+              <p class="step-desc">Buka grup yang sesuai dan lanjutkan proses bergabung di WhatsApp.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <!-- Brand col -->
+        <div>
+          <div class="footer-brand">
+            <div class="footer-brand-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+                <path d="M22 10v6"/>
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+              </svg>
+            </div>
+            <div>
+              <p class="footer-brand-name">Grup Mahasiswa UT</p>
+              <p class="footer-brand-sub">Direktori komunitas mahasiswa</p>
+            </div>
+          </div>
+          <p class="footer-about">
+            Platform untuk membantu mahasiswa Universitas Terbuka menemukan grup WhatsApp berdasarkan program studi, angkatan, UT Daerah, mata kuliah, Tuton, Karil, dan kebutuhan perkuliahan lainnya.
+          </p>
+          <div class="footer-actions">
+            <a href="#daftar-grup" class="footer-btn-primary">Cari Grup</a>
+            <a href="#cara-menggunakan" class="footer-btn-secondary">Cara Menggunakan</a>
+          </div>
+        </div>
+
+        <!-- Nav col -->
+        <div>
+          <p class="footer-col-title">Navigasi</p>
+          <nav class="footer-nav">
+            <a href="#">Beranda</a>
+            <a href="#daftar-grup">Daftar Grup</a>
+            <a href="#cara-menggunakan">Cara Menggunakan</a>
+          </nav>
+        </div>
+
+        <!-- Info col -->
+        <div>
+          <p class="footer-col-title">Informasi</p>
+          <div class="footer-info">
+            <p>Grup yang ditampilkan berasal dari komunitas mahasiswa.</p>
+            <p>Pastikan memeriksa nama, deskripsi, dan tujuan grup sebelum bergabung.</p>
+            <p>Platform ini bukan situs resmi Universitas Terbuka.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Grup Mahasiswa UT. Seluruh hak cipta dilindungi.</p>
+        <p>Dibuat untuk membantu mahasiswa Universitas Terbuka menemukan komunitas belajar.</p>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+// ============================================================
+// DATA — representative sample groups
+// ============================================================
+const ALL_GROUPS = [
+  // ── Umum / Angkatan ────────────────────────────────────────
+  { id: 1,  name: "MANAJEMEN",                                        category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "📊", link: "https://chat.whatsapp.com/C1sCGxVcUni2VwYUrymzDi?s=cl&p=a&mlu=4&ilr=4",   date: "2026" },
+  { id: 2,  name: "FORUM TUTON 2026",                                 category: "tuton",    tag: "Tuton",         tagClass: "tag-tuton",    emoji: "📚", link: "https://chat.whatsapp.com/GBFhGrAAgeu5fq7E0xG2yG?s=cl&p=a&mlu=4",         date: "2026" },
+  { id: 3,  name: "Komunikasi Mahasiswa UT All Prodi",                category: "angkatan", tag: "Angkatan",      tagClass: "tag-angkatan", emoji: "💬", link: "https://chat.whatsapp.com/IycqPwvyhph2VuyLerokn8?s=cl&p=a&mlu=4",         date: "2026" },
+  { id: 4,  name: "MAHASISWA UT 26.2",                                category: "angkatan", tag: "Angkatan",      tagClass: "tag-angkatan", emoji: "🎓", link: "https://chat.whatsapp.com/GU29dDNMsO8EJagf3VXXX0?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+
+  // ── Karil ──────────────────────────────────────────────────
+  { id: 5,  name: "Karil UT 26.2",                                    category: "karil",    tag: "Karil",         tagClass: "tag-karil",    emoji: "✍️", link: "https://chat.whatsapp.com/Jmdux8jl5ZaLFrbxjALfdb?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+
+  // ── Program Studi ──────────────────────────────────────────
+  { id: 6,  name: "Pendidikan Guru Sekolah Dasar (PGSD)",             category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🏫", link: "https://chat.whatsapp.com/CjkNEyeiwxa4FNgzZAp5mI?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 7,  name: "Ilmu Komunikasi 2026.2",                           category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "📡", link: "https://chat.whatsapp.com/B95hn363IgaHOYRceJ87JM?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 8,  name: "Ilmu Hukum",                                       category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "⚖️", link: "https://chat.whatsapp.com/KrK9rP3DQBBEdDHSsn19Ou?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 9,  name: "Sistem Informasi",                                 category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "💻", link: "https://chat.whatsapp.com/BXNKbFuTo5mDD4VFnUNtaX?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 10, name: "Administrasi Negara 26.2",                         category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🏛️", link: "https://chat.whatsapp.com/LtsuREGur779PAijqOiBah?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 11, name: "Administrasi Bisnis 26.2",                         category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🏢", link: "https://chat.whatsapp.com/IcqU9DVU7zXAeUJQ5QK7O2?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 12, name: "Akuntansi 2026.2",                                 category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🧾", link: "https://chat.whatsapp.com/Ipi4gblyGT11fJCkPipAv0?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 13, name: "PGPAUD 26.2",                                      category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🧒", link: "https://chat.whatsapp.com/DynDnWuxPTED34NxcxDNFv?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 14, name: "Biologi 2026.2",                                   category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🔬", link: "https://chat.whatsapp.com/JYilX4KyTf5KtGF3YR3idE?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 15, name: "Teknologi Pangan",                                 category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🌾", link: "https://chat.whatsapp.com/I4QroIdv1jH6kPTtgILX0j?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 16, name: "Agribisnis",                                       category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🌱", link: "https://chat.whatsapp.com/JsqlWXM2yYyEK3bcowpdua?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 17, name: "Ilmu Pemerintahan",                                category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🏟️", link: "https://chat.whatsapp.com/FwKs9GmvGWo6M21liPLajC?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 18, name: "Pendidikan Bahasa dan Sastra Indonesia 26.2",      category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "📝", link: "https://chat.whatsapp.com/FWxSIXi6DfZClcF62BnYEl?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 19, name: "Sastra Inggris",                                   category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🇬🇧", link: "https://chat.whatsapp.com/K7L5yl690GiBiqzQNB8XPX?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 20, name: "Ilmu Perpustakaan",                                category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "📖", link: "https://chat.whatsapp.com/BTQ6JdNV6uE4mALcFSb0YX?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 21, name: "Sains Data",                                       category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "📊", link: "https://chat.whatsapp.com/E9vudC595PPDozSyV8jGiL?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 22, name: "Sosiologi",                                        category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "👥", link: "https://chat.whatsapp.com/HQxFlcNrLdyEv3CNFyw4vw?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 23, name: "Perpajakan",                                       category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "💰", link: "https://chat.whatsapp.com/CUhQIYKsGTlH0rQyAH23ut?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 24, name: "Pendidikan Bahasa Inggris 26.2",                   category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🗣️", link: "https://chat.whatsapp.com/K1LNRCpvagH3WgFjEhB9ST?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 25, name: "Pariwisata 26.2",                                  category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "✈️", link: "https://chat.whatsapp.com/CK3VyWnB3rV0osxSRQd3B4?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 26, name: "Matematika 26.2",                                  category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🔢", link: "https://chat.whatsapp.com/KpOO9DqPiMp6bunlYcS5np?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 27, name: "Pendidikan Ekonomi 26.2",                          category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "📈", link: "https://chat.whatsapp.com/FoyR2Odzu6k5oL88wMCUHO?s=cl&p=a&mlu=4",          date: "2026.2" },
+  { id: 28, name: "Statistika 26.2",                                  category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "📉", link: "https://chat.whatsapp.com/I4KtkzvdjNS3P2XhBz5U7R?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+  { id: 29, name: "Pendidikan Agama Islam 26.2",                      category: "prodi",    tag: "Program Studi", tagClass: "tag-prodi",    emoji: "🕌", link: "https://chat.whatsapp.com/FzirCc1vPLbGoSuT7zBs1R?s=cl&p=a&mlu=4&ilr=4",   date: "2026.2" },
+
+  // ── UT Daerah ──────────────────────────────────────────────
+  { id: 30, name: "UT Jakarta",                                       category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🏙️", link: "https://chat.whatsapp.com/JjvMqzGsmc9AgqLX8pa9hk?s=cl&p=a&mlu=4&ilr=4",   date: "2026" },
+  { id: 31, name: "UT Bandung",                                       category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌸", link: "https://chat.whatsapp.com/F7KccJBmT4dADlX6cZY3Tp?s=cl&p=a&mlu=4&ilr=4",   date: "2026" },
+  { id: 32, name: "UT Serang",                                        category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌿", link: "https://chat.whatsapp.com/CPu8dg6299aIUrx2udqwrd?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 33, name: "UT Malang",                                        category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🍎", link: "https://chat.whatsapp.com/BphHA3E8UlbIBoePUMG4tr?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 34, name: "UT Surabaya",                                      category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌊", link: "https://chat.whatsapp.com/EAlLcZP820T140KGOgmEbm?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 35, name: "UT Surakarta",                                     category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🏯", link: "https://chat.whatsapp.com/KzMgKjOec5PDm7wvUaiRCa?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 36, name: "UT Jogja",                                         category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🛕", link: "https://chat.whatsapp.com/IRjQ7EK0Ly792FLxP9BTdu?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 37, name: "UT Purwokerto",                                    category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌄", link: "https://chat.whatsapp.com/G7WqJJprRCcIEwzg1QWN6T?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 38, name: "UT Semarang",                                      category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌆", link: "https://chat.whatsapp.com/BaM8qy2A2RB8ax3Dv7Dj7E?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 39, name: "UT Bogor",                                         category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌳", link: "https://chat.whatsapp.com/Iu2AhTDN6WIGOun0whsDsA?s=cl&p=a&mlu=4&ilr=4",   date: "2026" },
+  { id: 40, name: "UT Batam",                                         category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🏝️", link: "https://chat.whatsapp.com/LPGGa5LzZYh2dgHkSJDTGq?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 41, name: "UT Luar Negeri",                                   category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌏", link: "https://chat.whatsapp.com/LuZjDUMZFvJ7psjIOLY8uR?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 42, name: "UT Pangkal Pinang",                                category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "⛏️", link: "https://chat.whatsapp.com/DuzxZLxh9YIDtlEztpNifd?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 43, name: "UT Padang",                                        category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🏔️", link: "https://chat.whatsapp.com/HPMNAJurHWyJq99yBlllBt?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 44, name: "UT Pekanbaru",                                     category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🛢️", link: "https://chat.whatsapp.com/L2F8suI0zlb73LflVczbSV?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 45, name: "UT Jambi",                                         category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌿", link: "https://chat.whatsapp.com/CX9l0u4uzHnH2uvb9lexXt?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 46, name: "UT Palembang",                                     category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌉", link: "https://chat.whatsapp.com/Ix0PFpKaT215utkCutDc73?s=cl&p=a&mlu=4&ilr=4",   date: "2026" },
+  { id: 47, name: "UT Bandar Lampung",                                category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "⚡", link: "https://chat.whatsapp.com/GIysqmJbODT7bjNFiMnL3T?s=cl&p=a&mlu=4&ilr=4",   date: "2026" },
+  { id: 48, name: "UT Denpasar",                                      category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌺", link: "https://chat.whatsapp.com/Cl7uq1N17qLIpNKomRQNJ6?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 49, name: "UT Pontianak",                                     category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌴", link: "https://chat.whatsapp.com/KwrxliQjZUG5fXTbx3GvEo?s=cl&p=a&mlu=4&ilr=4",   date: "2026" },
+  { id: 50, name: "UT Palangka Raya",                                 category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌲", link: "https://chat.whatsapp.com/K4ztNUrjYzPKUONUqINN9R?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 51, name: "UT Banjarmasin",                                   category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🚤", link: "https://chat.whatsapp.com/EPiu0uf4qzr9ffOcc5RLMf?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 52, name: "UT Medan",                                         category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🏙️", link: "https://chat.whatsapp.com/DzNxTp0THNEDtLXMPaVjBU?s=cl&p=a&mlu=4",          date: "2026" },
+  { id: 53, name: "UT Bengkulu",                                      category: "daerah",   tag: "UT Daerah",     tagClass: "tag-daerah",   emoji: "🌊", link: "https://chat.whatsapp.com/CRiUi6lURreCd2UloNbGiV?s=cl&p=a&mlu=4",          date: "2026" },
+];
+
+// ============================================================
+// STATE
+// ============================================================
+let currentTab  = "semua";
+let searchQuery = "";
+
+// ============================================================
+// HELPERS
+// ============================================================
+function getFiltered() {
+  return ALL_GROUPS.filter(g => {
+    const matchTab    = currentTab === "semua" || g.category === currentTab;
+    const q           = searchQuery.toLowerCase().trim();
+    const matchSearch = !q ||
+      g.name.toLowerCase().includes(q) ||
+      g.tag.toLowerCase().includes(q) ||
+      g.category.toLowerCase().includes(q);
+    return matchTab && matchSearch;
+  });
+}
+
+// ============================================================
+// RENDER
+// ============================================================
+function render() {
+  const filtered = getFiltered();
+  const total    = filtered.length;
+
+  // Result count
+  const countEl = document.getElementById("result-count");
+  countEl.innerHTML = `Menampilkan <strong>${total}</strong> grup`;
+
+  // Group list
+  const listEl = document.getElementById("group-list");
+  if (filtered.length === 0) {
+    listEl.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </div>
+        <p class="empty-title">Grup tidak ditemukan</p>
+        <p class="empty-sub">Coba kata kunci atau kategori lain.</p>
+      </div>`;
+  } else {
+    listEl.innerHTML = filtered.map(g => `
+      <div class="group-item" role="listitem">
+        <div class="group-avatar">
+          <img src="logo-ut.jpg" alt="Logo Universitas Terbuka" loading="lazy" />
+        </div>
+        <div class="group-info">
+          <p class="group-name">${escHtml(g.name)}</p>
+          <div class="group-meta">
+            <span class="group-tag ${g.tagClass}">${g.tag}</span>
+            <span class="group-date">${g.date}</span>
+          </div>
+        </div>
+        <a href="${g.link}" class="join-btn" target="_blank" rel="noopener noreferrer" aria-label="Bergabung ke ${escHtml(g.name)}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12.04 2.002C6.478 2.002 2 6.48 2 12.04c0 1.87.512 3.619 1.4 5.116L2 22l4.97-1.371A10.02 10.02 0 0 0 12.04 22c5.563 0 10.04-4.478 10.04-10.04C22.08 6.48 17.603 2.002 12.04 2.002z" fill-rule="evenodd" clip-rule="evenodd"/>
+          </svg>
+          Bergabung
+        </a>
+      </div>`).join("");
+  }
+
+  // Footer info — cukup total, tanpa pagination
+  const paginEl = document.getElementById("pagination");
+  paginEl.innerHTML = `<span class="page-info">Total <strong>${total}</strong> grup tersedia</span><div></div>`;
+}
+
+function avatarBg(cat) {
+  const map = {
+    prodi: "#dbeafe", angkatan: "#fef3c7", daerah: "#dcfce7",
+    tuton: "#ede9fe", matkul: "#ffedd5", karil: "#fce7f3"
+  };
+  return map[cat] || "#f1f5f9";
+}
+function avatarColor(cat) {
+  const map = {
+    prodi: "#1d4ed8", angkatan: "#92400e", daerah: "#15803d",
+    tuton: "#6d28d9", matkul: "#c2410c", karil: "#be185d"
+  };
+  return map[cat] || "#475569";
+}
+function escHtml(s) {
+  return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+// ============================================================
+// EVENT LISTENERS
+// ============================================================
+document.getElementById("tabs").addEventListener("click", e => {
+  const btn = e.target.closest(".tab-btn");
+  if (!btn) return;
+  document.querySelectorAll(".tab-btn").forEach(b => {
+    b.classList.remove("active");
+    b.setAttribute("aria-selected", "false");
+  });
+  btn.classList.add("active");
+  btn.setAttribute("aria-selected", "true");
+  currentTab  = btn.dataset.tab;
+  currentPage = 1;
+  render();
+});
+
+let debounceTimer;
+document.getElementById("search-input").addEventListener("input", e => {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(() => {
+    searchQuery = e.target.value;
+    currentPage = 1;
+    render();
+  }, 200);
+});
+
+// Initial render
+render();
+</script>
+</body>
+</html>
